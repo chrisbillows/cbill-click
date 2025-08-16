@@ -1,6 +1,6 @@
 console.log("Hello world!");
 
-// myArr = [1, 2, 3, 4, 5]; 
+// myArr = [1, 2, 3, 4, 5];
 // console.log(myArr);
 
 // for (let num of myArr) {
@@ -55,15 +55,14 @@ console.log("Hello world!");
 // console.log(shoes2.Nike);
 // console.dir(shoes2);
 
-
 let myArr = [
-    { id: "Apple", price: 0.5, emoji: "🍎"},
-    { id: "Banana", price: 0.3, emoji: "🍌"},
-    { id: "Cherry", price: 0.2, emoji: "🍒"},
-    { id: "Apple", price: 0.5, emoji: "🍎"},
-    { id: "Apple", price: 0.5, emoji: "🍎"},  
-    { id: "Banana", price: 0.3, emoji: "🍌"},
-]
+  { id: "Apple", price: 0.5, emoji: "🍎" },
+  { id: "Banana", price: 0.3, emoji: "🍌" },
+  { id: "Cherry", price: 0.2, emoji: "🍒" },
+  { id: "Apple", price: 0.5, emoji: "🍎" },
+  { id: "Apple", price: 0.5, emoji: "🍎" },
+  { id: "Banana", price: 0.3, emoji: "🍌" },
+];
 
 // CB Version
 // let cartSummary = {};
@@ -81,16 +80,13 @@ let myArr = [
 // }
 
 // Reduce Version
-const cartSummary = myArr.reduce(
-    (acc, { id, price, emoji}) => {
-    if (!acc[id]) {
-        acc[id] = { price:0, quantity:0, emoji };
-    }
-    acc[id].price +=price;
-    acc[id].quantity +=1;
-    return acc;
-}, {})
-
-
+const cartSummary = myArr.reduce((acc, { id, price, emoji }) => {
+  if (!acc[id]) {
+    acc[id] = { price: 0, quantity: 0, emoji };
+  }
+  acc[id].price += price;
+  acc[id].quantity += 1;
+  return acc;
+}, {});
 
 console.log(cartSummary);

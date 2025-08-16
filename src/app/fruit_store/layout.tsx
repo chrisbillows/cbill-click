@@ -1,4 +1,4 @@
-import FruitHeader from '@/app/fruit_store/components/FruitHeader';
+import FruitHeader from "@/app/fruit_store/components/FruitHeader";
 
 export default function ExperimentLayout({
   children,

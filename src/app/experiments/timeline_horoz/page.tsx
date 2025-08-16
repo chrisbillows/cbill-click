@@ -1,7 +1,7 @@
 "use client";
 
-import React from 'react';
-import { Chrono } from 'react-chrono';
+import React from "react";
+import { Chrono } from "react-chrono";
 
 const items = [
   {
@@ -21,20 +21,12 @@ const items = [
     cardTitle: "Event 3",
     cardSubtitle: "Event 3 Subtitle",
     cardDetailedText: "This is the third event on the timeline.",
-  }
+  },
 ];
 
 const HorizontalTimeline = () => {
-  return (
-    <Chrono
-      items={items}
-      mode="HORIZONTAL"
-      itemWidth={150}
-      showSingle
-    />
-  );
+  return <Chrono items={items} mode="HORIZONTAL" itemWidth={150} showSingle />;
 };
-
 
 export default function TimelinePage() {
   return <HorizontalTimeline />;

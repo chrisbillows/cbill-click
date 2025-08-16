@@ -21,7 +21,7 @@ const fruits: Fruit[] = [
   // { name: "Cherry", emoji: "🍒", price: 3.99 },
   { name: "Mama", emoji: "👩️", price: 0.01 },
   { name: "Stuey", emoji: "👦️", price: 99.99 },
-  { name: "Andreea", emoji: "👧️", price: 199.99 } 
+  { name: "Andreea", emoji: "👧️", price: 199.99 },
 ];
 
 export default function FruitShop() {
@@ -39,11 +39,17 @@ export default function FruitShop() {
   return (
     <div data-name="App box" className="h-screen max-w-7xl mx-auto p-4">
       <div data-name="Layout for shop and cart" className="flex h-full gap-6">
-        <div data-name="Shop, flex to fill" className="flex-1 rounded-3xl border border-gray-200 bg-white p-6">
+        <div
+          data-name="Shop, flex to fill"
+          className="flex-1 rounded-3xl border border-gray-200 bg-white p-6"
+        >
           <h1 className="text-center text-3xl italic font-bold">Fruit Shop</h1>
-            <FruitGrid fruits={fruits} addToCart={addToCart} />
+          <FruitGrid fruits={fruits} addToCart={addToCart} />
         </div>
-        <aside data-name="Cart, fixed width" className="w-64 rounded-3xl border border-gray-200 bg-white p-6">
+        <aside
+          data-name="Cart, fixed width"
+          className="w-64 rounded-3xl border border-gray-200 bg-white p-6"
+        >
           <h1 className="text-center text-3xl italic font-bold">Cart</h1>
           <Cart cart={cart} onClear={resetCart} />
         </aside>

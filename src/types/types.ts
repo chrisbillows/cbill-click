@@ -5,7 +5,7 @@ export type Character = {
 };
 
 export type Fruit = {
-    name: string;
-    emoji: string;
-    price: number;
-}
+  name: string;
+  emoji: string;
+  price: number;
+};

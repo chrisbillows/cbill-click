@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { Chrono } from "react-chrono";
 
 const Timeline = () => {
@@ -33,7 +33,6 @@ const Timeline = () => {
     />
   );
 };
-
 
 export default function TimelinePage() {
   return (
