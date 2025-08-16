@@ -20,7 +20,8 @@
 }
 
 /* ---- Global element styles ---- */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -32,7 +33,10 @@ body {
 }
 
 /* Monospace for code blocks */
-code, pre, kbd, samp {
+code,
+pre,
+kbd,
+samp {
   font-family: var(--font-mono);
   font-variant-ligatures: none;
 }
